@@ -118,7 +118,7 @@
         <!-- end Topbar -->
 
         <!--Include left sidebar-->
-        @include('include/sidebar')
+        @include('include.sidebar')
 
         <!-- ============================================================== -->
         <!-- Start Page Content here -->
@@ -137,7 +137,7 @@
     </div>
 
     <!-- Vendor js -->
-    <script src="{{ asset('public/assets/js2/vendor.min.js') }}"></script>
+    <script src="{{ asset('assets/js2/vendor.min.js') }}"></script>
 
     <!-- Datatables-->
     <script src="{{ asset('assets/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
