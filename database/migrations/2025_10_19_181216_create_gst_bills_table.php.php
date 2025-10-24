@@ -17,16 +17,17 @@ return new class extends Migration
             $table->date("invoice_date")->nullable();
             $table->string("invoice_no")->nullable();
             $table->text("item_description")->nullable();
-            $table->float("total_amount",10,2)->default(0);
-            $table->float("cgst_rate",10,2)->default(0);
-            $table->float("sgst_rate",10,2)->default(0);
-            $table->float("igst_rate",10,2)->default(0);
-            $table->float("cgst_amount",10,2)->default(0);
-            $table->float("sgst_amount",10,2)->default(0);
-            $table->float("igst_amount",10,2)->default(0);
-            $table->float("tax_amount",10,2)->default(0);
-            $table->float("net_amount",10,2)->default(0);
+            $table->float("total_amount",10,2)->nullable();
+            $table->float("cgst_rate",10,2)->nullable();
+            $table->float("sgst_rate",10,2)->nullable();
+            $table->float("igst_rate",10,2)->nullable();
+            $table->float("cgst_amount",10,2)->nullable();
+            $table->float("sgst_amount",10,2)->nullable();
+            $table->float("igst_amount",10,2)->nullable();
+            $table->float("tax_amount",10,2)->nullable();
+            $table->float("net_amount",10,2)->nullable();
             $table->text("declaration")->nullable();
+            $table->tinyInteger("is_delete")->default(0);
             $table->timestamps();
         });
     }

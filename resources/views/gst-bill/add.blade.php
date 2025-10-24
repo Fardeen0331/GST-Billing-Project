@@ -47,7 +47,7 @@
                             <div class="col-md-4">
                                 <div class="form-group mb-3">
                                     <label>Invoice Number</label>
-                                    <input type="text" required value="{{ $invoice_no }}" name="invoice_no" class="form-control border-bottom" id="validationCustom02" placeholder="Enter Invoice number">
+                                    <input type="text" required name="invoice_no" class="form-control border-bottom" id="validationCustom02" placeholder="Enter Invoice number">
                                 </div>
                             </div>
                         </div>
@@ -60,26 +60,20 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6 border p-1 text-center">
+                            <div class="col-md-9 border p-1 text-center">
                                 <b>DESCRIPTIONS</b>
                             </div>
                             <div class="col-md-3 border p-1 text-center">
                                 <b>TOTAL AMOUNT</b>
                             </div>
-                            <div class="col-md-3 border p-1 text-center">
-                                <b>TOTAL AMOUNT (USD)</b>
-                            </div>
                         </div>
 
                         <div class="row mb-3">
-                            <div class="col-md-6 border p-2">
+                            <div class="col-md-9 border p-2">
                                 <input class="form-control" required name="item_description" placeholder="Enter description" />
                             </div>
                             <div class="col-md-3 border p-2">
-                                <input class="form-control" required type="text" name="total_amount" id="totalAmountInput" placeholder="Enter INR amount" oninput="calculateNetAmount()">
-                            </div>
-                            <div class="col-md-3 border p-2">
-                                <input class="form-control" type="text" name="total_amount_usd" placeholder="Enter USD amount" />
+                                <input class="form-control" required type="text" name="total_amount" id="totalAmountInput" placeholder="Enter PKR amount" oninput="calculateNetAmount()">
                             </div>
                         </div>
 

@@ -8,8 +8,11 @@ class Party extends Model
 {
     // table
     protected $table = "parties";
-    
 
+    // Primary key
+    protected $primaryKey = "id";
+    
+    // fillable columns
    protected $fillable = [
         "party_type", 
         "full_name", 
@@ -22,4 +25,9 @@ class Party extends Model
         "swift_code",
         "branch_address"
     ];
+
+    public function gstBills()
+    {
+        return $this->hasMany(GstBill::class);
+    }
 }
