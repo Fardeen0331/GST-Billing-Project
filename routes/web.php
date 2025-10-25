@@ -27,4 +27,12 @@ Route::post('/create-gst-bill', [GstBillController::class, 'createGstBill'])->na
 Route::get('/delete/{table}{id}', [AppController::class, 'delete'])->name('delete');
 
 // Resource routes
-Route::resource('vendor-invoice', [VendorInvoice::class, 'index']);
+Route::resource('vendor-invoice', VendorInvoice::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// UN Fardeen
+//Email: admin@gmail.com
+//Password: Pass@123
